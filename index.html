@@ -14,24 +14,30 @@
         font-size: 40px;
         color: #d63384;
     }
-    .option {
-        display: inline-block;
+    .buttons {
+        margin-top: 30px;
+    }
+    button {
         margin: 20px;
         font-size: 24px;
-        text-decoration: none;
         padding: 10px 20px;
         border-radius: 8px;
         border: none;
+        cursor: pointer;
     }
     .yes {
         background-color: #28a745;
         color: white;
-        cursor: pointer;
     }
     .no {
         background-color: #dc3545;
         color: white;
-        cursor: pointer;
+    }
+    #message {
+        color: #ff1493;
+        margin-top: 40px;
+        font-size: 24px;
+        line-height: 1.6;
     }
 </style>
 </head>
@@ -39,11 +45,12 @@
 
 <h1>Will You be My Valentine? ❤️</h1>
 
-<button class="option yes" onclick="showLove()">Yes</button>
+<div class="buttons">
+    <button class="yes" onclick="showLove()">Yes</button>
+    <button class="no" onclick="showNo()">No</button>
+</div>
 
-<button class="option no" onclick="showNo()">No</button>
-
-<h2 id="message" style="color:#ff1493; margin-top:30px;"></h2>
+<div id="message"></div>
 
 <script>
 function showLove() {
