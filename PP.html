@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Proposal</title>
+<style>
+    body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 100px;
+        background-color: #fff0f5;
+    }
+    h1 {
+        font-size: 40px;
+        color: #d63384;
+    }
+    .option {
+        display: inline-block;
+        margin: 20px;
+        font-size: 24px;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+    .yes {
+        background-color: #28a745;
+        color: white;
+    }
+    .no {
+        background-color: #dc3545;
+        color: white;
+        cursor: default;
+    }
+</style>
+</head>
+<body>
+
+<h1>Do you Love Me? ❤️</h1>
+
+<a href="#" class="option yes" onclick="showLove()">Yes</a>
+
+<span class="option no">No</span>
+
+<h2 id="message" style="color:#ff1493; margin-top:30px;"></h2>
+
+<script>
+function showLove() {
+    document.getElementById("message").innerText = "Love You to the Moon and back 🌙❤️";
+}
+</script>
+
+</body>
+</html>
