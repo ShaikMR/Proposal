@@ -21,15 +21,17 @@
         text-decoration: none;
         padding: 10px 20px;
         border-radius: 8px;
+        border: none;
     }
     .yes {
         background-color: #28a745;
         color: white;
+        cursor: pointer;
     }
     .no {
         background-color: #dc3545;
         color: white;
-        cursor: default;
+        cursor: pointer;
     }
 </style>
 </head>
@@ -37,9 +39,9 @@
 
 <h1>Will You be My Valentine? ❤️</h1>
 
-<a href="#" class="option yes" onclick="showLove()">Yes</a>
+<button class="option yes" onclick="showLove()">Yes</button>
 
-<span class="option no">No</span>
+<button class="option no" onclick="showNo()">No</button>
 
 <h2 id="message" style="color:#ff1493; margin-top:30px;"></h2>
 
@@ -59,7 +61,6 @@ function showNo() {
         "Please click on Yes ❤️";
 }
 </script>
-
 
 </body>
 </html>
