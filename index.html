@@ -45,7 +45,7 @@
 
 <a href="javascript:void(0)" class="option yes" onclick="showLove()">Yes</a>
 
-<a href="javascript:void(0)" class="option no" onclick="showNo()">No</a>
+<a href="javascript:void(0)" class="option no" onclick="showHate()">No</a>
 
 <div id="message"></div>
 
@@ -60,9 +60,8 @@ function showLove() {
     `;
 }
 
-function showNo() {
-    document.getElementById("message").innerHTML =
-        "Please click on Yes ❤️";
+function showHate() {
+    document.getElementById("message").innerHTML = "Please click on Yes ❤️";
 }
 </script>
 
